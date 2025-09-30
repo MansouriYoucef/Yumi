@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumi - Le Monde Magique des Friandises</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🍭 Yumi</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li><a href="notre-histoire.html" class="nav-link">Notre Histoire</a></li>
+                    <li><a href="nos-produits.html" class="nav-link">Nos Produits</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bienvenue dans le Monde Magique de Yumi ! 🎉</h2>
+                <p>Découvrez nos délicieuses friandises, donuts colorés, crêpes sucrées et bien plus encore !</p>
+                <div class="hero-buttons">
+                    <a href="nos-produits.html" class="btn btn-primary">Voir nos Produits</a>
+                    <a href="notre-histoire.html" class="btn btn-secondary">Notre Histoire</a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="floating-sweet">🍩</div>
+                <div class="floating-sweet">🧁</div>
+                <div class="floating-sweet">🍰</div>
+                <div class="floating-sweet">🍭</div>
+                <div class="floating-sweet">🍪</div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3>Pourquoi Choisir Yumi ? ✨</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Couleurs Magiques</h4>
+                        <p>Nos friandises sont aussi colorées que l'arc-en-ciel !</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">😋</div>
+                        <h4>Goûts Délicieux</h4>
+                        <p>Chaque bouchée est un voyage au pays des saveurs !</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👶</div>
+                        <h4>Pour les Enfants</h4>
+                        <p>Spécialement créé pour faire plaisir aux petits gourmands !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <div class="container">
+                <h3>Nos Produits Populaires 🌟</h3>
+                <div class="products-preview">
+                    <div class="product-card">
+                        <div class="product-emoji">🍩</div>
+                        <h4>Donuts Magiques</h4>
+                        <p>Des donuts aux couleurs de l'arc-en-ciel !</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-emoji">🥞</div>
+                        <h4>Crêpes Sucrées</h4>
+                        <p>Des crêpes moelleuses avec plein de garnitures !</p>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-emoji">🍭</div>
+                        <h4>Bonbons Colorés</h4>
+                        <p>Une explosion de saveurs et de couleurs !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🍭 Yumi.com</h4>
+                <p>Le monde magique des friandises pour enfants</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="notre-histoire.html">Notre Histoire</a></li>
+                    <li><a href="nos-produits.html">Nos Produits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Nos Produits</h4>
+                <ul>
+                    <li><a href="#">Donuts</a></li>
+                    <li><a href="#">Crêpes</a></li>
+                    <li><a href="#">Bonbons</a></li>
+                    <li><a href="#">Gâteaux</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 contact@yumi.com</p>
+                <p>📞 01 23 45 67 89</p>
+                <p>📍 123 Rue des Bonbons, Paris</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yumi.com - Tous droits réservés | Fait avec ❤️ pour les enfants</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Animation des friandises flottantes
+        document.addEventListener('DOMContentLoaded', () => {
+            const sweets = document.querySelectorAll('.floating-sweet');
+            sweets.forEach((sweet, index) => {
+                sweet.style.animationDelay = `${index * 0.5}s`;
+            });
+        });
+    </script>
+</body>
+</html>
